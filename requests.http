@@ -28,3 +28,14 @@ Content-Type: application/json
   "password": "password"
 }
 @jwt_anna = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc5NDg2MDZ9.cLHQCVifGVtIPAeOoru9nuOi3s2nijbX4JtsL22qT-w
+
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc5NDg2MDZ9.cLHQCVifGVtIPAeOoru9nuOi3s2nijbX4JtsL22qT-w
+Content-Type: application/json 
+
+{
+  "email": "anna@example.com",
+  "password": "password"
+}
